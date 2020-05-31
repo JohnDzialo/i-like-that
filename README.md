@@ -69,7 +69,7 @@ curl --request PUT \
 ## Run Tests
 
 ```bash
-python -m pytest
+docker-compose run --rm -T tests
 ```
 
 ## DB Migrations
@@ -86,3 +86,4 @@ python manage.py db upgrade
 
 Better schema validation for incoming requests.
 100% test coverage
+Better docstrings for each function
