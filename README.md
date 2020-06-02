@@ -6,7 +6,6 @@ Hey!  Do you like reading people's posts?  Do you like rating posts in the hopes
 
 Then this is the app for you.  Post a message, read other's messages, then Up vote or Down vote the posts as you see fit.
 
-
 ## Setup
 
 Build the docker-compose script and bring up the containers.

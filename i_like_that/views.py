@@ -2,8 +2,8 @@ import os
 
 from flask import jsonify, request
 
-from .models import db, Post
-from i_like_that import app
+from i_like_that.models import Post
+from i_like_that import app, db
 
 
 @app.route('/posts/', methods=['POST'])

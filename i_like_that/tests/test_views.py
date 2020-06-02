@@ -2,10 +2,7 @@ import json
 import os
 import unittest
 
-from flask_sqlalchemy import SQLAlchemy
-
-from i_like_that.models import db
-from i_like_that.views import app
+from i_like_that import app, db
 
 
 class TestViews(unittest.TestCase):
@@ -18,7 +15,6 @@ class TestViews(unittest.TestCase):
 
     def tearDown(self):
         db.session.remove()
-        db.drop_all()
 
     def test_create_post(self):
         resp = self.app.post(

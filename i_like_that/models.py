@@ -2,11 +2,8 @@ from datetime import datetime, timezone
 
 from flask_sqlalchemy import SQLAlchemy
 
-from i_like_that import app
+from i_like_that import db
 from i_like_that.exceptions import ValidationError
-
-
-db = SQLAlchemy(app)
 
 
 class Post(db.Model):
@@ -35,3 +32,4 @@ class Post(db.Model):
 
 
 db.create_all()
+db.session.commit()
